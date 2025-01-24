@@ -35,6 +35,12 @@ const options = {
       description: "A simple Express Library API",
       version: "1.0.0",
     },
+    servers: [
+      {
+        url: "https://nodejs-swagger-api.vercel.app/",
+        description: "My API Documentation",
+      },
+    ],
   },
   apis: ["src/**/*.js"], // files containing annotations as above
 };
