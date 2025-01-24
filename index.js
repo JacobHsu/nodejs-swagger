@@ -4,8 +4,8 @@ var cors = require("cors");
 const swaggerUi = require("swagger-ui-express");
 const swaggerJsDoc = require("swagger-jsdoc");
 
-var indexRouter = require("./routes/index");
-var postRouter = require("./routes/posts");
+var indexRouter = require("./src/routes/index");
+var postRouter = require("./src/routes/posts");
 
 const app = express();
 const port = 3000;
@@ -36,7 +36,7 @@ const options = {
       version: "1.0.0",
     },
   },
-  apis: ["routes/*.js"], // files containing annotations as above
+  apis: ["src/**/*.js"], // files containing annotations as above
 };
 
 const specs = swaggerJsDoc(options);
