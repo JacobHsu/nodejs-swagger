@@ -1,6 +1,6 @@
-var express = require("express");
-var bodyParser = require("body-parser");
-var data = require("../data/data.js");
+import express from "express";
+import bodyParser from "body-parser";
+import data from "../data/data.js";
 
 const postRouter = express.Router();
 
@@ -170,4 +170,4 @@ postRouter.delete("/:id", (req, res) => {
   }
 });
 
-module.exports = postRouter;
+export default postRouter;
