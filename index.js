@@ -36,8 +36,7 @@ const options = {
       version: "1.0.0",
     },
   },
-  // This is to call all the file
-  apis: ["/**/*.js"],
+  apis: ["routes/*.js"], // files containing annotations as above
 };
 
 const specs = swaggerJsDoc(options);

@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-var data = require("../data/data.js");
+var data = require("./data/data.js");
 
 const postRouter = express.Router();
 
