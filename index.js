@@ -9,7 +9,7 @@ import postRouter from "./src/Routes/posts.js";
 // CDN CSS
 
 const CSS_URL =
-  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
+  "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.18.3/swagger-ui.min.css";
 
 const app = express();
 
