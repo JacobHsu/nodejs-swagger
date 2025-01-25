@@ -1,17 +1,17 @@
 import express from "express";
 import cors from "cors";
+
 import swaggerUI from "swagger-ui-express";
 import swaggerJsDoc from "swagger-jsdoc";
 
-import postRouter from "./src/routes/posts.js";
+import postRouter from "./src/Routes/posts.js";
 
-
+// CDN CSS
 
 const CSS_URL =
   "https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/4.1.0/swagger-ui.min.css";
 
 const app = express();
-
 
 const PORT = process.env.PORT || 3001;
 
@@ -37,7 +37,6 @@ const options = {
 };
 
 const specs = swaggerJsDoc(options);
-// app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 app.use(
   "/api-docs",
